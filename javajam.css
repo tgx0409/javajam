@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+header{background-color: #D2B48C;
+height: 150px;
+background-image: url('images/javajamlogo.jpg');
+background-repeat: no-repeat;
+display: block}
+
+body{background-color: #FCEBB6; 
+background-image:url('images/background.gif') ;
+color: #221811;
+font-family: Verdana, Arial, sans-serif;}
+
+h1{padding-top: 45px;
+padding-left: 220px;
+font-size:3em}
+
+nav{text-align: center;
+font-weight: bold;
+font-size: 1.5em;
+padding-top: 10px;
+float: left;
+width: 200px;
+display: block}
+
+nav a{/*descendant selector, a that belong to nav only*/text-decoration: none;}
+
+nav a:link{color:#fef6c2}
+
+nav a:visited{color:#D2B48C}
+
+nav a:hover{color: #CC9933}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;}
+
+/*all pseudo classes for hyperlink (order is important):
+:link - unclicked
+:visited - has been clicked
+:focus - triggered when hyperlink has keyboard focus
+:hover - triggered when mouse cursor move over hyperlink
+:active - triggered when hyperlink is actually clicked*/
+
+footer{background-color: #D2B48C;
+font-size: .60em;
+font-style: italic;
+text-align: center;
+padding-bottom: 10px;
+border-top: 2px solid #221811;
+display: block}
+
+#wrapper{background-color: #231814;
+min-width: 900px;
+max-width: 1280px;
+width: 80%; /*configures the width of a block display element*/
+margin-right: auto;
+margin-left: auto;
+box-shadow: 5px 5px 5px 5px #333333;}
+
+h4{background-color: #D2B48C;
+font-size: 1.2em;
+padding-left: .5em;
+padding-bottom: 0px;
+text-transform: uppercase;
+border-bottom: 2px solid #231814;
+clear: left;
+}
+
+main{padding: 0 0 2em 0;
+margin-left: 200px;
+background-color: #fef6c2;
+display: block}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.details{padding-left: 20%;
+padding-right: 20%;
+overflow:auto;}
+
+img{padding-left: 10px;
+padding-right: 10px;}
+
+#heroroad{
+    background-image: url('images/heroroad.jpg');
+    background-size: 100% 100%; /*width height*/
+    height: 250px
+}
+
+#heromugs{
+    background-image: url('images/heromugs.jpg');
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#heroguitar{
+    background-image: url('images/heroguitar.jpg');
+    background-size: 100% 100%;
+    height: 250px
+}
+
+#herojobs{
+    background-image: url('images/herojobs.jpg');
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+.floatleft{
+    float:left;
+    padding: 0 2em 2em 0
+}
+
+table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    background-color: #FFFFCC;
+}
+
+/*th and td are cells*/
+/*th is header n td is desc n tr is row*/
+
+td, th{
+    padding: 10px;
+}
+
+tr:nth-of-type(odd){
+    background-color: #D2B48C;
+}
+
+form{
+    padding: 2em;
+}
+
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit{
+    margin-left: 9.5em;
+}
